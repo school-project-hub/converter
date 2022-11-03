@@ -59,12 +59,15 @@ class _HomePageState extends State<HomePage> {
                         SizedBox(
                           width: 200,
                           height: 50,
-                          child: RaisedButton(
+                          child: ElevatedButton(
                             child: Text(
                               "Height Conversion",
                               style: TextStyle(fontSize: 18),
                             ),
-                            color: Colors.green,
+                            style: ButtonStyle(
+                              foregroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.white),
+                            ),
                             onPressed: () => Navigator.push(
                                 context,
                                 MaterialPageRoute(
@@ -82,12 +85,15 @@ class _HomePageState extends State<HomePage> {
                         SizedBox(
                           width: 200,
                           height: 50,
-                          child: RaisedButton(
+                          child: ElevatedButton(
                             child: Text(
                               "Decimal to Binary",
                               style: TextStyle(fontSize: 18),
                             ),
-                            color: Colors.blue,
+                            style: ButtonStyle(
+                              foregroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.white),
+                            ),
                             onPressed: () => Navigator.push(
                                 context,
                                 MaterialPageRoute(
@@ -105,12 +111,15 @@ class _HomePageState extends State<HomePage> {
                         SizedBox(
                           width: 200,
                           height: 50,
-                          child: RaisedButton(
+                          child: TextButton(
                             child: Text(
                               "Distance Conversion",
                               style: TextStyle(fontSize: 18),
                             ),
-                            color: Colors.orange,
+                            style: ButtonStyle(
+                              foregroundColor:
+                                  MaterialStateProperty.all<Color>(Colors.blue),
+                            ),
                             onPressed: () => Navigator.push(
                                 context,
                                 MaterialPageRoute(
