@@ -60,7 +60,7 @@ class _DecimalConversionState extends State<DecimalConversion> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          RaisedButton(
+                          TextButton(
                             child: Text("Calculate"),
                             onPressed: () => calculateMe(1),
                           ),
