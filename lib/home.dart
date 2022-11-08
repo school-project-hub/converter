@@ -111,14 +111,14 @@ class _HomePageState extends State<HomePage> {
                         SizedBox(
                           width: 200,
                           height: 50,
-                          child: TextButton(
+                          child: ElevatedButton(
                             child: Text(
                               "Distance Conversion",
                               style: TextStyle(fontSize: 18),
                             ),
                             style: ButtonStyle(
-                              foregroundColor:
-                                  MaterialStateProperty.all<Color>(Colors.blue),
+                              foregroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.white),
                             ),
                             onPressed: () => Navigator.push(
                                 context,
