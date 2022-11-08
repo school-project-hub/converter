@@ -59,7 +59,7 @@ class _DistanceConversionState extends State<DistanceConversion> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          TextButton(
+                          ElevatedButton(
                             child: Text("Calculate"),
                             onPressed: () => calculateMe(1),
                           ),

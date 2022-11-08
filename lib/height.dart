@@ -56,7 +56,7 @@ class _HeightConversionState extends State<HeightConversion> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          TextButton(
+                          ElevatedButton(
                             child: Text("Calculate"),
                             onPressed: () => calculateMe(1),
                           ),

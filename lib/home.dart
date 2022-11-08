@@ -64,9 +64,9 @@ class _HomePageState extends State<HomePage> {
                               "Height Conversion",
                               style: TextStyle(fontSize: 18),
                             ),
-                            style: ButtonStyle(
-                              foregroundColor: MaterialStateProperty.all<Color>(
-                                  Colors.white),
+                            style: ElevatedButton.styleFrom(
+                              primary: Colors.green, // background
+                              onPrimary: Colors.white, // foreground
                             ),
                             onPressed: () => Navigator.push(
                                 context,
@@ -109,24 +109,23 @@ class _HomePageState extends State<HomePage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         SizedBox(
-                          width: 200,
-                          height: 50,
-                          child: ElevatedButton(
-                            child: Text(
-                              "Distance Conversion",
-                              style: TextStyle(fontSize: 18),
-                            ),
-                            style: ButtonStyle(
-                              foregroundColor: MaterialStateProperty.all<Color>(
-                                  Colors.white),
-                            ),
-                            onPressed: () => Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (content) =>
-                                        DistanceConversion())),
-                          ),
-                        ),
+                            width: 200,
+                            height: 50,
+                            child: ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                primary: Colors.orange, // background
+                                onPrimary: Colors.white, // foreground
+                              ),
+                              onPressed: () => Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (content) =>
+                                          DistanceConversion())),
+                              child: Text(
+                                'Distance Conversion',
+                                style: TextStyle(fontSize: 18),
+                              ),
+                            )),
                       ],
                     ),
                     SizedBox(
